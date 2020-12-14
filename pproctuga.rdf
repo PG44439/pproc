@@ -37,13 +37,11 @@
    <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
    <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
   </skos:Concept>
-   </skos:Concept>
    <skos:Concept rdf:about="Acordo Quadro" xml:lang="pt">
    <skos:prefLabel xml:lang="pt">Acordo Quadro</skos:prefLabel>
    <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
    <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
   </skos:Concept>
-   </skos:Concept>
    <skos:Concept rdf:about="Parceria para a inovação" xml:lang="pt">
    <skos:prefLabel xml:lang="pt">Parceria para a inovação</skos:prefLabel>
    <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
