@@ -1,114 +1,52 @@
-##proceduretype - vocabulario da CE
-
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
- xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
- xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
- xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
- xmlns:dc="http://purl.org/dc/elements/1.1/" 
- xmlns:dcterms="http://purl.org/dc/terms/" 
- xmlns:atold="http://publications.europa.eu/resource/authority/" 
- xmlns:at="http://publications.europa.eu/ontology/authority/">
-<skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/procurement-procedure-type" at:table.id="procurement-procedure-type" at:table.version.number="20190918-0">
- <owl:versionInfo>20190918-0</owl:versionInfo>
- <rdfs:label xml:lang="en">procurement-procedure-type service</rdfs:label>
- <at:prefLabel xml:lang="en">procurement-procedure-type service</at:prefLabel>
- <skos:prefLabel xml:lang="en">procurement-procedure-type service</skos:prefLabel>
-</skos:ConceptScheme>
- <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/procurement-procedure-type/open" at:deprecated="false">
- 	<skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/procurement-procedure-type"/>
- 	<at:authority-code>open</at:authority-code>
- 	<at:op-code>open</at:op-code><atold:op-code>open</atold:op-code>
- 	<dc:identifier>open</dc:identifier>
- 	<at:start.use>2019-09-18</at:start.use>
- 	<skos:prefLabel xml:lang="pt">Aberto</skos:prefLabel>
- </skos:Concept>
-</rdf:RDF>
-
-##procedimento da CE de criar sub-propriedades
-
-<rdf:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/procurement-procedure-type" at:table.id="procurement-procedure-type" at:table.version.number="20190918-0">
-	<rdf:Property rdf:about=""
-	<rdfs:label xml:lang="pt">Ajuste Direto</rdfs:label>
-	<at:prefLabel xml:lang="pt">Ajuste Direto</at:prefLabel>
-	<skos:prefLabel xml:lang="pt">Ajuste Direto</skos:prefLabel>
-	<rdfs:comment xml:lang="pt" rdf:parseType="Literal">
-	O ajuste direto é o procedimento em que a entidade adjudicante convida diretamente uma entidade à sua escolha a apresentar proposta de acordo com Decreto-Lei n.º 18/2008 usando<a href="#owl:Class">Contract</a>Class.
-	</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/procurement/public-contracts-procedure-types#"/>
-	<rdfs:range rdf:resource="skos:Concept"/>
-	<rdfs:subPropertyOf rdf:resource="proctypes:classification" />
-	<dcterms:identifier>legal:companyType</dcterms:identifier>
-</rdf:Property>
-
-##Ajuste Direto Regime Geral
-##Consulta Prévia
-##Concurso Público
-##Procedimento de negociação
-##Diálogo concorrencial
-##Acordo-Quadro
-##Parceria para inovação
-
-
-https://raw.githubusercontent.com/opendatacz/public-contracts-ontology/master/public-contracts.rdf#Contract
-https://raw.githubusercontent.com/opendatacz/public-contracts-ontology/master/schemes/procedure-types.ttl#
-https://raw.githubusercontent.com/opendatacz/public-contracts-ontology/master/public-contracts.rdf#
-
-
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
        xmlns:skos="http://www.w3.org/2004/02/skos/core#"
        xmlns:dc="http://purl.org/dc/elements/1.1/">
        
-   <skos:ConceptScheme rdf:about="http://wikiWS.org/tipoprocedimento"> 
+   <skos:ConceptScheme rdf:about="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"> 
     <skos:hasTopConcept rdf:resource="Ajuste Direto Regime Geral"/>
     <skos:hasTopConcept rdf:resource="Consulta Prévia"/>
     <skos:hasTopConcept rdf:resource="Concurso Público"/>
     <skos:hasTopConcept rdf:resource="Procedimento de Negociação"/>
     <skos:hasTopConcept rdf:resource="Diálogo Concorrencial"/>
-    <skos:hasTopConcept rdf:resource="Acordo-Quadro"/>
+    <skos:hasTopConcept rdf:resource="Acordo Quadro"/>
     <skos:hasTopConcept rdf:resource="Parceria para a inovação"/>	
    </skos:ConceptScheme>
-   
    <skos:Concept rdf:about="Ajuste Direto Regime Geral" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Nacional</skos:prefLabel>
-   <skos:inScheme rdf:resource="http://wikiWS.org/tipoprocedimento"/>
-   <skos:topConceptOf rdf:resource="http://wikiWS.org/tipoprocedimento"/>
-   <skos:narrower rdf:resource="#Sub01ThemeAmbito01"/>
-   <skos:narrower rdf:resource="#Sub02ThemeAmbito01"/>
+   <skos:prefLabel xml:lang="pt">ajuste direto</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
   </skos:Concept>
-  
-  <skos:Concept rdf:about="#Sub01ThemeAmbito01" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Jovem-N</skos:prefLabel>
-   <skos:inScheme rdf:resource="http://wikiWS.org/tipoprocedimento"/>
-   <skos:topConceptOf rdf:resource="#ThemeAmbito01"/>
+     <skos:Concept rdf:about="Consulta Prévia" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Consulta Prévia</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
+   <skos:Concept rdf:about="Concurso Público" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Concurso Público</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
+   <skos:Concept rdf:about="Procedimento de Negociação" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Procedimento de Negociação</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
+   <skos:Concept rdf:about="Diálogo Concorrencial" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Diálogo Concorrencial</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
    </skos:Concept>
-   
-   <skos:Concept rdf:about="#Sub02ThemeAmbito01" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Geral-N</skos:prefLabel>
-    <skos:inScheme rdf:resource="http://wikiWS.org/tipoprocedimento"/>
-    <skos:topConceptOf rdf:resource="#ThemeAmbito01"/>
+   <skos:Concept rdf:about="Acordo Quadro" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Acordo Quadro</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
    </skos:Concept>
-   
-   <skos:Concept rdf:about="#ThemeAmbito02" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Regional</skos:prefLabel>
-   <skos:inScheme rdf:resource="http://wikiWS.org/themeAmbito"/>
-   <skos:topConceptOf rdf:resource="http://wikiWS.org/themeAmbito"/>
-   <skos:narrower rdf:resource="#Sub01ThemeAmbito02"/>
-   <skos:narrower rdf:resource="#Sub02ThemeAmbito02"/>
-   </skos:Concept>
-   
-   <skos:Concept rdf:about="#Sub01ThemeAmbito02" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Jovem-R</skos:prefLabel>
-   <skos:altLabel xml:lang="en">Youth-R</skos:altLabel>
-   <skos:inScheme rdf:resource="http://wikiWS.org/themeAmbito"/>
-   <skos:topConceptOf rdf:resource="#ThemeAmbito02"/>
-   </skos:Concept>
-   
-   <skos:Concept rdf:about="#Sub02ThemeAmbito02" xml:lang="pt">
-   <skos:prefLabel xml:lang="pt">Geral-R</skos:prefLabel>
-   <skos:altLabel xml:lang="en">General-R</skos:altLabel>
-   <skos:inScheme rdf:resource="http://wikiWS.org/themeAmbito"/>
-   <skos:topConceptOf rdf:resource="#ThemeAmbito02"/>
-   </skos:Concept>
+   <skos:Concept rdf:about="Parceria para a inovação" xml:lang="pt">
+   <skos:prefLabel xml:lang="pt">Parceria para a inovação</skos:prefLabel>
+   <skos:inScheme rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+   <skos:topConceptOf rdf:resource="https://github.com/PG44439/pproc/blob/main/pproctuga.rdf"/>
+  </skos:Concept>
 </rdf:RDF>
